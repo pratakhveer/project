@@ -1,0 +1,40 @@
+   <nav>
+          <ul class="topnav">
+            <li class="logo"><a href="index"></a></li>
+            <li><a href="index">HOME</a></li>
+            <li><a href="pages/games">GAMES</a></li>
+            <li><a href="pages/videos">VIDEOS</a></li>
+            <li><a href="pages/contact">CONTACT</a></li>
+          </ul>
+        </nav>
+
+
+       .sideView ul li,
+h6 {
+  color: lightgrey;
+  font-family: BodyFont;
+  font-size: 18px;
+  width: 285px;
+  text-decoration: none;
+}
+
+.sideView {
+  text-decoration: none;
+  margin-left: 75%;
+  margin-top: -2%;
+  height: auto;
+}
+.sideView ul li a {
+  text-decoration: none;
+}
+
+
+<section class="sideView">
+      <ul>
+        <h6>Languages I code in</h6>
+        <li><a href="">Javascript </a></li>
+        <li><a href="">HTML</a></li>
+        <li><a href="">CSS</a></li>
+        <li><a href="">React-Native</a></li>
+      </ul>
+    </section>

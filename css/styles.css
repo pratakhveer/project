@@ -1,0 +1,286 @@
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.element::-webkit-scrollbar {
+  width: 0 !important;
+}
+@font-face {
+  font-family: "BodyFont";
+  src: url(../fonts/SpaceMono-Regular.ttf);
+}
+@font-face {
+  font-family: "Header";
+  src: url(../fonts/SpaceMono-Bold.ttf);
+}
+@font-face {
+  font-family: "nexarustRounded";
+  src: url(../fonts/rounded.otf);
+}
+@font-face {
+  font-family: "helveticas";
+  src: url(../fonts/Helvetica.ttf);
+}
+head {
+  font-family: Header;
+  color: lightgrey;
+}
+p {
+  color: lightgrey;
+}
+
+body {
+  background-color: black;
+  background-image: linear-gradient(to top right, black, rgb(119, 113, 113));
+  background-repeat: no-repeat;
+}
+.subText {
+  font-family: BodyFont;
+  font-size: 20px;
+  color: lightgrey;
+  margin-top: 5px;
+  padding-top: none;
+  padding-left: 20px;
+  width: 800px;
+  color: lightgrey;
+  height: auto;
+}
+
+.heading h1,
+.gameHeading h1 {
+  font-family: Header;
+  padding: 20px;
+  font-size: 60px;
+  padding-bottom: 10px;
+  margin-bottom: -5px;
+  margin-top: 6%;
+  width: 560px;
+  height: auto;
+  animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+
+.heading h1:hover,
+.gameHeading h1:hover {
+  background-color: lightgray;
+
+  /* Create the gradient. */
+  background-image: linear-gradient(
+    45deg,
+    lightgrey 16.666%,
+    darkgrey 33.333%,
+    grey 33.333%,
+    rgb(100, 100, 100) 50%,
+    rgb(83, 83, 83) 50%,
+    rgb(66, 65, 65) 66.666%,
+    rgb(46, 46, 46) 66.666%,
+    black 83.333%
+  );
+
+  /* Set the background size and repeat properties. */
+  background-size: 1000%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+}
+@keyframes rainbow-text-simple-animation-rev {
+  0% {
+    background-size: 650%;
+  }
+  40% {
+    background-size: 650%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+@keyframes rainbow-text-simple-animation {
+  0% {
+    background-size: 100%;
+  }
+  80% {
+    background-size: 650%;
+  }
+  100% {
+    background-size: 650%;
+  }
+}
+footer {
+  font-family: "BodyFont";
+  color: lightgrey;
+  text-align: center;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+  position: fixed;
+  bottom: 0pt;
+  font-size: 14px;
+}
+.mybutton {
+  background-image: url(../images/arrow2.png);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  text-indent: -999999px;
+  position: relative;
+  top: -18px;
+  margin-top: 95px;
+  margin-left: 650px;
+  text-align: center;
+  justify-content: center;
+  justify-self: center;
+  padding: 15px;
+}
+.mybutton:hover {
+  background-size: 50px;
+  width: 50px;
+  height: 50px;
+  margin-left: 645px;
+  margin-top: 90px;
+  padding: 15px;
+}
+
+ul {
+  margin-top: -96%;
+  margin: 0;
+  padding: 0;
+}
+ul:first-child {
+  margin-left: 50%;
+}
+
+.par ul li {
+  display: inline-block;
+  padding: 26px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 43px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  font-family: BodyFont;
+  color: darkgrey;
+  font-size: 26px;
+}
+.par {
+  margin-right: -65px;
+  top: -50px;
+  position: relative;
+}
+.par li a {
+  text-decoration: none;
+  color: lightgrey;
+  font-family: BodyFont;
+}
+.par ul li:hover {
+  padding: 23px;
+  margin-left: 39px;
+  margin-top: -2px;
+  margin-bottom: 0px;
+  font-size: 30px;
+  margin-right: -2px;
+  text-decoration: underline;
+  animation-duration: 200ms;
+  animation-timing-function: ease-in forwards;
+}
+
+.par ul li:first-child {
+  margin-right: 3px;
+}
+
+h6 {
+  padding: 0;
+  margin-bottom: 0;
+}
+.logo {
+  color: lightgrey;
+  font-family: Header;
+  font-size: 30px;
+  margin-right: 10px;
+  width: 100px;
+  text-decoration: none;
+}
+.aboutMe {
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+  font-family: Cascadia code;
+  color: lightgray;
+  margin-top: 250px;
+  margin-bottom: 210px;
+  font-size: 23px;
+  border-bottom: none;
+  border-right: none;
+  border-top: none;
+  border-left: rgb(97, 96, 96);
+  border-style: solid;
+  border-width: 14px;
+  border-radius: 5px;
+  width: 800px;
+  align-self: center;
+  margin-left: 270px;
+}
+.aboutMe p {
+  font-family: BodyFont;
+}
+.AboutMe {
+  text-decoration: underline;
+  font-family: Cascadia Code;
+}
+.gameHeading h1 {
+  font-size: 58px;
+  width: 620px;
+}
+.gamess {
+  color: lightgrey;
+  font-family: BodyFont;
+  padding: 20px;
+  display: flex;
+  margin-top: 170px;
+  margin-bottom: 150px;
+  text-emphasis: bold;
+}
+.gamess figure {
+  margin: auto;
+  text-align: center;
+}
+.gamess figure a img {
+  border: 1.5px solid lightgray;
+  border-radius: 50%;
+  box-shadow: gray 0 0 13px;
+  background-size: 100%;
+  width: 300px;
+  height: 300px;
+}
+.gamess figure:hover {
+  transform: scale(1.1);
+}
+.contacts {
+  color: lightgrey;
+  font-family: BodyFont;
+  padding: 20px;
+  display: flex;
+  margin-top: 170px;
+  margin-bottom: 150px;
+  text-emphasis: bold;
+}
+.contacts figure {
+  margin: auto;
+  text-align: center;
+}
+.contacts figure a img {
+  border: 1.5px solid lightgray;
+  border-radius: 50%;
+  box-shadow: gray 0 0 13px;
+  background-size: 100%;
+  width: 150px;
+  height: 150px;
+}
